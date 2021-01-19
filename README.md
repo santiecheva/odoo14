@@ -1,4 +1,4 @@
-<title>Implementación de Odoo 14 </title>
+#Implementación de Odoo 14
 
 <h1>Crm Cumplimiento</h1>
 
