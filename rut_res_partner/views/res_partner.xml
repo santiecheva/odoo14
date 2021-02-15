@@ -6,7 +6,6 @@
         <field name="name">Fórmulario Contacto colombia</field>
         <field name="model">res.partner</field>
         <field name="arch" type="xml">
-            <form>
                 <field name="city" position="replace">
                     <field name="city" invisible="1"/>
                 </field>   
@@ -22,7 +21,6 @@
                     <field name="x_pn_retri"/>
                 </field>
 
-            </form>
         </field>
     </record>
 
