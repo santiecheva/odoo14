@@ -11,7 +11,7 @@
     'category': 'tools',
     'depends': ['base','crm'],
     'data': [
-        'security/ir.model.access.csv',
+        #'security/ir.model.access.csv',
         'views/res_partner.xml'],
     'demo': [],
     'images': [],
