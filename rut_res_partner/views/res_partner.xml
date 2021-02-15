@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     
-    <record model="ir.ui.view" id="cumplimiento_crm_lead_view_form">
-        <field name='inherit_id' ref='crm.crm_case_form_view_oppor'/>
+    <record model="ir.ui.view" id="rut_partner_form">
+        <field name='inherit_id' ref='base.view_partner_form'/>
         <field name="name">Fórmulario Contacto colombia</field>
         <field name="model">res.partner</field>
         <field name="arch" type="xml">

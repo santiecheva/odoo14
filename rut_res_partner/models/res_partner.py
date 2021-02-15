@@ -18,6 +18,7 @@ class CountryStateCity(models.Model):
     country_id = fields.Many2one('res.country', string ='Country', required=True)
 
 class ResPartner(models.Model):
+    
     _inherit = 'res.partner'
 
     # Adding new name fields
