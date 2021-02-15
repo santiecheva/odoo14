@@ -39,13 +39,13 @@ class ResPartner(models.Model):
     # Tributate regime
     x_pn_retri = fields.Selection(
         [
-            (6, "Simplificado"),
-            (23, "PErsona Natural"),
-            (7, "Común"),
-            (11, "Gran Autorretenedor Contribuyente"),
-            (22, "Internacional"),
-            (25, "Autorretenedor Común"),
-            (24, "Gran contribuidor")
+            ("6", "Simplificado"),
+            ("23", "PErsona Natural"),
+            ("7", "Común"),
+            ("11", "Gran Autorretenedor Contribuyente"),
+            ("22", "Internacional"),
+            ("25", "Autorretenedor Común"),
+            ("24", "Gran contribuidor")
         ], string ="Régimen"
     )
 
