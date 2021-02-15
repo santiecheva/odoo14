@@ -27,7 +27,7 @@ class ResPartner(models.Model):
     x_lastname1 = fields.Char(string ="Last Name")
     x_lastname2 = fields.Char(string ="Second Last Name")
 
-    #marca d
+    #marca 
     companyBrandName = fields.Char(string ="Brand")
 
 
