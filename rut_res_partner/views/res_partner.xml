@@ -11,14 +11,16 @@
                     <field name="city" invisible="1"/>
                 </field>   
 
-                <field name="city_id"
-                    options="{'no_open': True}"
-                    placeholder="Ciudad"                    
-                />
+                <field name="city" position="replace">
+                    <field name="city_id"
+                        options="{'no_open': True}"
+                        placeholder="Ciudad"                    
+                    />
+                </field>   
 
-                 <div class="o_address_format" position="before">            
+                <field name="category_id" position="after">         
                     <field name="x_pn_retri"/>
-                </div>
+                </field>
 
             </form>
         </field>
