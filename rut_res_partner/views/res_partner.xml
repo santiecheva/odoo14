@@ -16,9 +16,9 @@
                     placeholder="Ciudad"                    
                 />
 
-                 <field name="street" position="before">            
+                 <div class="o_address_format" position="before">            
                     <field name="x_pn_retri"/>
-                </field>
+                </div>
 
             </form>
         </field>
