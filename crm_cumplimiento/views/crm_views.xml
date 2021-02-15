@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record model="ir.ui.view" id="login_user_detail_form_view">
-            <field name="name">Login User Details</field>
-            <field name="model">login.detail</field>
+        <record model="ir.ui.view" id="cumplimiento_crm_lead_view_form">
+            <field name='inherit_id' ref='crm.crm_case_form_view_oppor'/>
+            <field name="name">Formulario Cumplimiento</field>
+            <field name="model">crm.lead</field>
             <field name="arch" type="xml">
             <form>
-                <sheet>
                     <group>
-                        <field name="name"/>
+                        <field name="aseguradora_id"/>
                         <field name="date_time"/>
                         <field name="ip_address"/>
                     </group>
-                </sheet>
             </form>
             </field>
         </record>

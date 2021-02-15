@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record model="ir.ui.view" id="cumplimiento_crm_lead_view_form">
+        <field name='inherit_id' ref='crm.crm_case_form_view_oppor'/>
+        <field name="name">Fórmulario Contacto colombia</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="city" position="replace">
+                    <field name="city" invisible="1"/>
+                </field>   
+
+                <field name="city_id"
+                    options="{'no_open': True}"
+                    placeholder="Ciudad"
+                    attrs="{'invisible':[('state_id', '=', False)]}" 
+                />
+
+                 <field name="street_name" position="before">            
+                    <field name="x_pn_retri"/>
+                </field>
+
+            </form>
+        </field>
+    </record>
+
+</odoo>
