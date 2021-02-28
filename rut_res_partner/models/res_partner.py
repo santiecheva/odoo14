@@ -56,3 +56,4 @@ class ResPartner(models.Model):
         ], string ="Régimen"
     )
 
+    ciiu_id = fields.Many2one('ciiu', string = 'Código CIIU')
