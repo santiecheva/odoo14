@@ -2,13 +2,12 @@
 <odoo>
     
     <record model="ir.ui.view" id="rut_partner_form">
-        <field name='inherit_id' ref='l10n_latam_base.view_partner_latam_form'/>
+        <field name='inherit_id' ref='base.view_partner_form'/>
         <field name="name">Fórmulario Contacto colombia</field>
         <field name="model">res.partner</field>
         <field name="arch" type="xml">
 
-                <field name="l10n_latam_identification_type_id" position="before">
-                    <label for="x_pn_retri" string = "Régimen Tributario" />        
+                <field name="vat" position="before">
                     <field name="x_pn_retri" string = "Régimen"/>
                 </field>
 
