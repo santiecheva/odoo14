@@ -30,7 +30,7 @@
             </form>
         </field>
     </record>
-
+<!--
     <record id="action_ciiu_transaction" model="ir.actions.act_window">
         <field name="name">CIIU</field>
         <field name="res_model">ciiu</field>
@@ -45,4 +45,5 @@
         id="menu_action_ciiu_transaction"
         parent="account.account_account_menu" sequence="11"/>
 
+-->
 </odoo>
