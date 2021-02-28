@@ -47,11 +47,11 @@ class ResPartner(models.Model):
 
     city = fields.Char(related="city_id.name")
 
-    ciiu_id = fields.Many2one(
+    ccodigo_id = fields.Many2one(
         comodel_name = 'ciiu',
         string = 'Código CIIU'
         )
-        
+
     x_pn_retri = fields.Selection(
         [
             ("6", "Simplificado"),
