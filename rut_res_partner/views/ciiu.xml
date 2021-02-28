@@ -11,7 +11,6 @@
             <tree string="CIIU" create="0" delete="0" edit="0">
                 <field name="code"/>
                 <field name="description"/>
-                <field name="type" invisible="1" />
             </tree>
         </field>
     </record>
@@ -25,13 +24,6 @@
                 <group>
                     <field name="code"/>
                     <field name="description"/>
-                    <field name="has_parent" attrs="{'invisible':['|',('has_division', '=', True),('has_section', '=', True)]}" />
-                    <field name="parent" attrs="{'invisible':[('has_parent', '=', False)]}"/>
-                    <field name="has_division" attrs="{'invisible':['|',('has_parent', '=', True),('has_section', '=', True)]}" />
-                    <field name="division" attrs="{'invisible':[('has_division', '=', False)]}"/>
-                    <field name="has_section" attrs="{'invisible':['|',('has_division', '=', True),('has_parent', '=', True)]}" />
-                    <field name="section" attrs="{'invisible':[('has_section', '=', False)]}"/>
-                    <field name="type"/>
                     <field name="name" />
                 </group>
             </form>
