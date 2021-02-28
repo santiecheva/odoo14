@@ -3,6 +3,16 @@
 import logging
 from odoo import models, fields, api
 
+class IndustrialClassification(models.Model):
+    _name = "ciiu"  # res.co.ciiu
+    _description = "ISIC List"
+
+    name = fields.Char(
+        string="Code and Description",
+    )
+    code = fields.Char('Code', required=True)
+    description = fields.Char('Description', required=True)
+
 class CountryStateCity(models.Model):
     """
     Model added to manipulate  separately the cities on Partner address.
