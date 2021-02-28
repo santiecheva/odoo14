@@ -7,10 +7,11 @@
         <field name="model">res.partner</field>
         <field name="arch" type="xml">
 
-                <field name="l10n_latam_identification_type_id" position="before">         
-                    <field name="x_pn_retri"/>
+                <field name="l10n_latam_identification_type_id" position="before">
+                    <label for="x_pn_retri" string = "Régimen Tributario" />        
+                    <field name="x_pn_retri" string = "Régimen"/>
                 </field>
-                
+
         </field>
     </record>
 
