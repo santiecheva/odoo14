@@ -47,7 +47,7 @@ class ResPartner(models.Model):
     x_pn_retri = fields.Selection(
         [
             ("6", "Simplificado"),
-            ("23", "PErsona Natural"),
+            ("23", "Persona Natural"),
             ("7", "Común"),
             ("11", "Gran Autorretenedor Contribuyente"),
             ("22", "Internacional"),
