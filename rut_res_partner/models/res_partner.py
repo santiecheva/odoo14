@@ -32,6 +32,11 @@ class ResPartner(models.Model):
         comodel_name='res.country.state.city',
         string = "Municipio"
         )
+    
+    ciu_id = fields.Many2one(
+        comodel_name='res.country.state.city',
+        string = "Municipio"
+        )
 
     city = fields.Char(related="city_id.name")
 

@@ -17,7 +17,7 @@
 
                 <field name="vat" position="before">
                     <field name="x_pn_retri" string="Régimen"/>
-                    <field name="ciiu_id" widget='selection'/>
+                    <field name="ciu_id" widget='selection'/>
 
                 </field>
 
