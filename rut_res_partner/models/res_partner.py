@@ -27,19 +27,6 @@ class ResPartner(models.Model):
         "¡El número de identificación debe ser único!"),
     ]
 
-    # Adding new name fields
-    """
-    x_name1 = fields.Char(string ="First Name")
-    x_name2 = fields.Char(string ="Second Name")
-    x_lastname1 = fields.Char(string ="Last Name")
-    x_lastname2 = fields.Char(string ="Second Last Name")
-
-    #marca 
-    companyBrandName = fields.Char(string ="Brand")
-
-
-    verificationDigit = fields.Integer(string ='VD', size=2)
-    """
     city_id = fields.Many2one(
         comodel_name='res.country.state.city',
         string = "Municipio"
