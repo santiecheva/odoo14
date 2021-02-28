@@ -5,7 +5,7 @@ from odoo import models, fields, api
 
 class CountryStateCity(models.Model):
     """
-    Model added to manipulate separately the cities on Partner address.
+    Model added to manipulate  separately the cities on Partner address.
     """
     _description = 'Model to manipulate Cities'
     _name = 'res.country.state.city'
