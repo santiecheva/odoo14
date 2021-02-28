@@ -12,8 +12,9 @@
     'depends': ['base','crm', 'l10n_latam_base'],
     'data': [
         #'security/ir.model.access.csv',
+        'views/ciiu.xml'        
         'views/res_partner.xml',
-        'views/ciiu.xml'
+
         ],
     'demo': [],
     'images': [],

@@ -3,16 +3,6 @@
 import logging
 from odoo import models, fields, api
 
-class IndustrialClassification(models.Model):
-    _name = "ciiu"  # res.co.ciiu
-    _description = "ISIC List"
-
-    name = fields.Char(
-        string="Code and Description",
-    )
-    code = fields.Char('Code', required=True)
-    description = fields.Char('Description', required=True)
-
 class CountryStateCity(models.Model):
     """
     Model added to manipulate  separately the cities on Partner address.
@@ -50,10 +40,18 @@ class ResPartner(models.Model):
 
     verificationDigit = fields.Integer(string ='VD', size=2)
     """
-    city_id = fields.Many2one(comodel_name='res.country.state.city', string = "Municipio")
+    city_id = fields.Many2one(
+        comodel_name='res.country.state.city',
+        string = "Municipio"
+        )
+
     city = fields.Char(related="city_id.name")
 
-    # Tributate regime
+    ciiu_id = fields.Many2one(
+        comodel_name = 'ciiu',
+        string = 'Código CIIU'
+        )
+        
     x_pn_retri = fields.Selection(
         [
             ("6", "Simplificado"),
@@ -63,7 +61,8 @@ class ResPartner(models.Model):
             ("22", "Internacional"),
             ("25", "Autorretenedor Común"),
             ("24", "Gran contribuidor")
-        ], string ="Régimen"
+        ], 
+        string ="Régimen"
     )
 
-    ciiu_id = fields.Many2one(comodel_name = 'ciiu', string = 'Código CIIU')
+
