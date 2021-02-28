@@ -27,6 +27,10 @@ class ResPartner(models.Model):
         "¡El número de identificación debe ser único!"),
     ]
 
+    code_id = fields.Many2one(
+        comodel_name='ciiu', string='Ciiu'
+    )
+
     city_id = fields.Many2one(
         comodel_name='res.country.state.city',
         string = "Municipio"
