@@ -11,7 +11,7 @@
                     <attribute name="invisible">1</attribute>
                 </field>
 
-                <field name="street2" position="before">
+                <field name="street2" position="after">
                     <fielf name = "city_id" />
                 </field>
 
