@@ -7,8 +7,12 @@
         <field name="model">res.partner</field>
         <field name="arch" type="xml">
 
-                <field name="city" position="replace">
-                    <field name="city_id" string = "Ciudad"/>
+                <field name="city" position="attribute">
+                    <attribute name="invisible">1</attribute>
+                </field>
+
+                <field name="street2" position="before">
+                    <fielf name = "city_id" />
                 </field>
 
                 <field name="vat" position="before">
