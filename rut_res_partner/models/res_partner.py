@@ -40,7 +40,7 @@ class ResPartner(models.Model):
 
     verificationDigit = fields.Integer(string ='VD', size=2)
     """
-    city_id = fields.Many2one('res.country.state.city', string = "Municipio")
+    city_id = fields.Many2one(comodel_name='res.country.state.city', string = "Municipio")
     city = fields.Char(related="city_id.name")
 
     # Tributate regime
@@ -56,4 +56,4 @@ class ResPartner(models.Model):
         ], string ="Régimen"
     )
 
-    ciiu_id = fields.Many2one('ciiu', string = 'Código CIIU')
+    ciiu_id = fields.Many2one(comodel_name = 'ciiu', string = 'Código CIIU')
