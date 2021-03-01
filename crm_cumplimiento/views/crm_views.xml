@@ -15,7 +15,6 @@
                     <field name="id"/>                    
                 </field>
 
-            <notebook colspan = '4' >
                 <page string = 'Información Póliza' >
                     <group>
                         <field name="tipo_poliza_id"/>
@@ -31,7 +30,6 @@
                         <field name = 'objeto_contrato' />
                     </div>
                 </page>
-            </notebook>
             </field>
         </record>
    
