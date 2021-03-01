@@ -11,7 +11,7 @@
     'category': 'tools',
     'depends': ['base'],
     'data': [
-        #'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/ciiu.xml'        
         'views/res_partner.xml',
 
