@@ -18,15 +18,16 @@
             <notebook>
                 <page string = 'Información Póliza' >
                     <group>
-                        <field name="tipo_poliza_id"/>
-                        <field name="contrato_id"/>
-                        <field name="subcontrato_id"/>
+                        <group>
+                            <field name="tipo_poliza_id"/>
+                            <field name="contrato_id"/>
+                            <field name="subcontrato_id"/>
+                        </group>
+                        <group>
+                            <field name="dcto_negocio"/>
+                            <field name="valor_contrato" widget='monetary' options="{'currency_field': 'company_currency'}"/>            
+                        </group>    
                     </group>
-                    <group>
-                        <field name="dcto_negocio"/>
-                        <field name="valor_contrato" widget='monetary' options="{'currency_field': 'company_currency'}"/>            
-                    </group>    
-
                     <div>
                         <field name = 'objeto_contrato' />
                     </div>
