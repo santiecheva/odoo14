@@ -16,11 +16,11 @@
                     <field name="valor_contrato" widget='monetary' options="{'currency_field': 'company_currency'}"/>
                 </field>
 
-                <field name='user_id' position = 'before'>
+                <group name='opportunity_partner' position = 'after'>
                     <field name="tipo_poliza_id"/>
                     <field name="contrato_id"/>
                     <field name="subcontrato_id"/>
-                </field>
+                </group>
 
             </field>
         </record>
