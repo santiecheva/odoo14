@@ -46,6 +46,8 @@ class CrmLead(models.Model):
         string="Comentario"
     )
 
+    ramo_id = fields.Many2one('maestro.ramos', string='Ramo')
+
     @api.depends('subcontrato_id')
     def _logica_riesgo(self):
         for record in self:
