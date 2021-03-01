@@ -18,7 +18,8 @@ class CrmLead(models.Model):
     )
 
     dcto_negocio = fields.Char(
-        string = 'Documento Negocio'
+        string = 'Documento Negocio',
+         help="Acta 20394 Medellín"
         )
 
     valor_contrato = fields.Monetary(
