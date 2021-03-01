@@ -13,7 +13,7 @@
     'depends': ['base','crm'],
     'license': 'LGPL-3',
     'data': [
-        'security/ir.model.access.csv',
+        #'security/ir.model.access.csv',
         'views/crm_views.xml',
         'views/maestro_negocios.xml',
         ],
