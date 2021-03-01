@@ -6,7 +6,7 @@
     <!--CIIU List View-->
     <record id="view_ciiu_transaction_tree" model="ir.ui.view">
         <field name="name">ciiu.tree</field>
-        <field name="model">ciiu</field>
+        <field name="model">res.ciiu</field>
         <field name="arch" type="xml">
             <tree string="CIIU">
                 <field name="name"/>
@@ -19,7 +19,7 @@
     <!-- CIIU Form View-->
     <record id="view_ciiu_transaction_form" model="ir.ui.view">
         <field name="name">ciiu.view</field>
-        <field name="model">ciiu</field>
+        <field name="model">res.ciiu</field>
         <field name="arch" type="xml">
             <form string="CIIU" >
                 <group>
