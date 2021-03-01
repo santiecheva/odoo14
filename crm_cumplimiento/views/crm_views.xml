@@ -16,7 +16,7 @@
                     <field name="valor_contrato" widget='monetary' options="{'currency_field': 'company_currency'}"/>
                 </field>
 
-                <field name='phone' position = 'after'>
+                <field name='user_id' position = 'before'>
                     <field name="tipo_poliza_id"/>
                     <field name="contrato_id"/>
                     <field name="subcontrato_id"/>
