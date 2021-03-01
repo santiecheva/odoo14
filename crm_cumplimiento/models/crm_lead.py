@@ -40,7 +40,7 @@ class CrmLead(models.Model):
     contrato_id = fields.Many2one('maestro.contratos', string = 'Tipo de Contrato' )
     subcontrato_id = fields.Many2one('maestro.subcontratos', string = 'Subtipo de Contrato', 
         domain = "[('contrato_id','=',contrato_id)]")
-    objeto_contrato = fields.Html(string = 'Objeto del contrato')
+    objeto_contrato = fields.Text(string = 'Objeto del contrato')
 
     comentario = fields.Html(
         string="Comentario"
