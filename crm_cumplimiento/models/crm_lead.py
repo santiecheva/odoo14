@@ -21,7 +21,7 @@ class CrmLead(models.Model):
         string = 'Documento Negocio'
         )
 
-    valor_contrato = fields.Integer(
+    valor_contrato = fields.Monetary(
         string="Valor del Contrato",
         help="Digite el Valor total del contrato"
     )

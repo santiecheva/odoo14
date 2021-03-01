@@ -14,7 +14,9 @@
     'license': 'LGPL-3',
     'data': [
         'security/ir.model.access.csv',
-        'views/crm_views.xml'],
+        'views/crm_views.xml',
+        'views/maestro_negocios.xml',
+        ],
     'demo': [],
     'images': ['static/description/banner.png'],
     'installable': True,

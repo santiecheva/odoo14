@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<odoo>
+  <record id='maestro_contratos_form_view' model= 'ir.ui.view'>
+      <field name='name'>Maestro contratos</field>
+      <field name='model'>maestro.contratos</field>
+      <field name='arch' type='xml'>
+        <form string='Form Contratos'>
+          <sheet>
+            <group>
+              <field name='name'/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+  <record id='maestro_contratos_tree_view' model= 'ir.ui.view'>
+    <field name='name'>Maestro contratos tree</field>
+    <field name='model'>maestro.contratos</field>
+    <field name='arch' type='xml'>
+      <tree string='Contratos'>
+            <field name='name'/>
+      </tree>
+    </field>
+  </record>  
+
+   <record id='maestro_subcontratos_form_view' model= 'ir.ui.view'>
+      <field name='name'>Maestro subcontratos</field>
+      <field name='model'>maestro.subcontratos</field>
+      <field name='arch' type='xml'>
+        <form string='Form Contratos'>
+          <sheet>
+            <group>
+              <field name='name'/>
+              <field name='contrato_id'/>
+              <field name='verde_hasta'/>
+              <field name='amarillo_hasta'/>
+              <field name='naranja_hasta'/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+  <record id='maestro_subcontratos_tree_view' model= 'ir.ui.view'>
+    <field name='name'>Maestro contratos tree</field>
+    <field name='model'>maestro.subcontratos</field>
+    <field name='arch' type='xml'>
+      <tree string='Contratos'>
+        <field name='name'/>
+        <field name='contrato_id'/>
+        <field name='verde_hasta'/>
+        <field name='amarillo_hasta'/>
+        <field name='naranja_hasta'/>      
+      </tree>
+    </field>
+  </record>  
+
+  <record id='action_maestro_contratos' model= 'ir.actions.act_window'>
+  <field name='name'>action.tipo_prestacionservicios</field>
+  <field name='type'>ir.actions.act_window</field>
+  <field name='res_model'>maestro.contratos</field>
+  <field name='view_mode'>tree,form</field>
+  </record>
+
+  <record id='action_subcontratos' model= 'ir.actions.act_window'>
+  <field name='name'>action.tipo_prestacionservicios</field>
+  <field name='type'>ir.actions.act_window</field>
+  <field name='res_model'>maestro.subcontratos</field>
+  <field name='view_mode'>tree,form</field>
+  </record>
+
+  </odoo>
