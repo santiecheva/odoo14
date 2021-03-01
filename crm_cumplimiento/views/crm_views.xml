@@ -29,6 +29,7 @@
                         </group>    
                     </group>
                     <div>
+                     <h2 style='color:SlateBlue;'>Objeto del Contrato</h2>
                         <field name = 'objeto_contrato' />
                     </div>
                 </page>
