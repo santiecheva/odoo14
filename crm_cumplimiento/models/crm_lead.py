@@ -23,7 +23,9 @@ class CrmLead(models.Model):
         )
 
     valor_contrato = fields.Monetary(
+        currency_field='company_currency', 
         string="Valor del Contrato",
+        tracking=True,
         help="Digite el Valor total del contrato"
     )
 
