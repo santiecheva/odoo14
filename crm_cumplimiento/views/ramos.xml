@@ -52,5 +52,7 @@
 <menuitem id='negocios_cumplimiento_generales_root' name='Negocios'/>
 <menuitem id='negocios_generales_submenu' name='Generales' parent='negocios_cumplimiento_generales_root' />
 <menuitem id='ramos_generales_submenu' name = 'Ramos' sequence = '1' parent = 'negocios_generales_submenu' action = 'action_ramos' /> 
-  
+<menuitem id='negocios_cumplimiento_submenu' name='Cumplimiento' parent='negocios_cumplimiento_generales_root' />
+<menuitem id='maestro_contratos_submenu' name = 'Ramos' sequence = '1' parent = 'negocios_generales_submenu' action = 'action_maestro_contratos' /> 
+<menuitem id='maestro_subcontratos_submenu' name = 'Ramos' sequence = '1' parent = 'negocios_generales_submenu' action = 'action_subcontratos' /> 
 </odoo>
