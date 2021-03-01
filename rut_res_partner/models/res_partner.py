@@ -27,10 +27,6 @@ class ResPartner(models.Model):
     ]
 
 
-    ciiu = fields.Many2one('ciiu', string ="ISIC Activity")
-    
-
-
     city = fields.Char(related="city_id.name")
 
     x_pn_retri = fields.Selection(
