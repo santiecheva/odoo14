@@ -12,7 +12,6 @@ class CIIU(models.Model):
     code = fields.Char(string = 'Code', required=True)
     description = fields.Char(string ='Description', required=True)
     
-
     @api.onchange('code','description')
     def _compute_concat_name(self):
         for record in self:
@@ -20,4 +19,3 @@ class CIIU(models.Model):
                 record.name = ''
             else:
                 record.name = str(record.code) + ' - ' + str(record.description)
-  
