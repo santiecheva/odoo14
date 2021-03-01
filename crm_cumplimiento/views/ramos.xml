@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<odoo>
+<record id='maestro_ramos_form_view' model= 'ir.ui.view'>
+    <field name='name'>Maestro Ramos</field>
+    <field name='model'>maestro.ramos</field>
+    <field name='arch' type='xml'>
+      <form string='Form Ramo'>
+        <sheet>
+          <group>
+            <group>
+              <field name='name'/>
+              <field name='producto'/>
+              <field name='IdInsura'/>
+              <field name='IdSis'/>
+              <field name='insurance_id'/>
+            </group>
+            <group>
+              <field name='codigo'/>
+              <field name='iva'/>
+              <field name='porcentaje_ramo'/>
+              <field name='insurer_id'/>
+              <field name='team_id'/>
+
+            </group>
+          </group>
+        </sheet>
+      </form>
+    </field>
+</record> 
+
+<record id='maestro_ramos_tree_view' model= 'ir.ui.view'>
+    <field name='name'>Maestro Ramos</field>
+    <field name='model'>maestro.ramos</field>
+    <field name='arch' type='xml'>
+      <tree string='Tree Ramos'>
+        <field name='name'/>
+        <field name='insurance_id'/>
+        <field name='codigo'/>
+        <field name='iva'/>
+        <field name='porcentaje_ramo'/>
+      </tree>
+    </field>
+</record> 
+
+<record id='action_ramos' model= 'ir.actions.act_window'>
+  <field name='name'>Ramos</field>
+  <field name='type'>ir.actions.act_window</field>
+  <field name='res_model'>maestro.ramos</field>
+  <field name='view_mode'>tree,form</field>
+</record>
+
+<menuitem id='negocios_cumplimiento_generales_root' name='Negocios'/>
+<menuitem id='negocios_generales_submenu' name='Generales' parent='negocios_cumplimiento_generales_root' />
+<menuitem id='ramos_generales_submenu' name = 'Ramos' sequence = '1' parent = 'negocios_generales_submenu' action = 'action_ramos' /> 
+  
+</odoo>

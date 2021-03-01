@@ -16,6 +16,8 @@
         #'security/ir.model.access.csv',
         'views/crm_views.xml',
         'views/maestro_negocios.xml',
+        'views/ramos.xml',
+
         ],
     'demo': [],
     'installable': True,

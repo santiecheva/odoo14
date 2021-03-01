@@ -38,7 +38,7 @@
                 <page string = 'Comentario del negocio'>
                     <field name='comentario' />
                 </page>
-
+                
             </notebook>
             </field>
         </record>
