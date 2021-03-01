@@ -4,7 +4,7 @@ from odoo import models, fields, api
 
 
 class CIIU(models.Model):
-    _name = "res.ciiu" 
+    _name = "ciiu" 
 
     name = fields.Char(
         string="Code and Description",

@@ -28,15 +28,9 @@ class ResPartner(models.Model):
     ]
 
 
-    city_id = fields.Many2one(
-        comodel_name='res.country.state.city',
-        string = "Municipio"
-        )
+    ciiu = fields.Many2one('ciiu', string ="ISIC Activity")
     
-    ciu_id = fields.Many2one(
-        comodel_name='res.ciiu',
-        string = "Ciiu"
-        )
+
 
     city = fields.Char(related="city_id.name")
 
