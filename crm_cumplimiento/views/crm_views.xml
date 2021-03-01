@@ -24,7 +24,7 @@
                             <field name="contrato_id"/>
                             <field name="subcontrato_id"/>
                         </group>
-                    <div>
+                    </div>
                 </field>
 
             </field>
