@@ -8,4 +8,4 @@ class CIIU(models.Model):
 
     name = fields.Char(string="Code and Description")
     code = fields.Char(string="Code")
-    descripion = fields.Char(string="Description")
+    description = fields.Char(string="Description")
