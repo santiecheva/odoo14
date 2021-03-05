@@ -34,7 +34,7 @@
   <record id='action_codigo_ciiu' model= 'ir.actions.act_window'>
   <field name='name'>codigo.ciiu</field>
   <field name='type'>ir.actions.act_window</field>
-  <field name='res_model'>view_ciiu_transaction_form</field>
+  <field name='res_model'>ciiu</field>
   <field name='view_mode'>tree,form</field>
   </record>
 
