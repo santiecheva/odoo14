@@ -13,12 +13,15 @@
 
         <!-- Add gantt view mode to the project.task dashboard -->
         <record id="project.action_view_task" model="ir.actions.act_window">
+            <field name="name">Gantt Project</field>
             <field name="view_mode">kanban,tree,form,gantt,calendar,pivot,graph,activity</field>
             <field name="context">{'search_default_project': 1}</field>
-              <field name='res_model'>project.task</field>
-               <field name="view_id" ref="project_task_gantt_view"/>
+            <field name='res_model'>project.task</field>
+            <field name="view_id" ref="project_task_gantt_view"/>
 
         </record>
+        
+<menuitem id='project_gantt_root' name='proyecto gantt' action = 'action_view_task' />
 
     </data>
 </odoo>
