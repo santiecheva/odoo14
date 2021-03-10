@@ -1,5 +1,5 @@
 <odoo>
-    <data>
+
 
         <!-- Gantt view -->
         <record id="project_task_gantt_view" model="ir.ui.view">
@@ -12,7 +12,7 @@
         </record>
 
         <!-- Add gantt view mode to the project.task dashboard -->
-        <record id="project.action_view_task" model="ir.actions.act_window">
+        <record id="project_action_view_task" model="ir.actions.act_window">
             <field name="name">Gantt Project</field>
             <field name="view_mode">gantt</field>
             <field name="context">{'search_default_project': 1}</field>
@@ -23,5 +23,4 @@
         
 <menuitem id='project_gantt_root' name='proyecto gantt' action = 'action_view_task' />
 
-    </data>
 </odoo>
