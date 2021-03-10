@@ -9,9 +9,8 @@
 			 <script type="text/javascript" src="/web_gantt_project_task_app/static/lib/anychart-core.min.js"/>
 			<script type="text/javascript" src="/web_gantt_project_task_app/static/lib/anychart-base.min.js"/>
 			<script type="text/javascript" src="/web_gantt_project_task_app/static/lib/anychart-gantt.min.js"/>
-			<!-- <script src="https://cdn.anychart.com/releases/8.7.0/js/anychart-base.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+			<script src="https://cdn.anychart.com/releases/8.7.0/js/anychart-base.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
 			<script src="https://cdn.anychart.com/releases/8.7.0/js/anychart-gantt.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4" type="text/javascript"></script>
-		 -->
 			
 
 		</xpath>
