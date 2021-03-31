@@ -40,6 +40,10 @@ class ResPartner(models.Model):
         "¡El número de identificación debe ser único!"),
     ]
 
+    x_name1 = fields.Char(string ="First Name")
+    x_name2 = fields.Char(string ="Second Name")
+    x_lastname1 = fields.Char(string ="Last Name")
+    x_lastname2 = fields.Char(string ="Second Last Name")
 
     city = fields.Char(related="city_id.name")
 
@@ -56,7 +60,3 @@ class ResPartner(models.Model):
         string ="Régimen"
     )
 
-    x_name1 = fields.Char(string ="First Name")
-    x_name2 = fields.Char(string ="Second Name")
-    x_lastname1 = fields.Char(string ="Last Name")
-    x_lastname2 = fields.Char(string ="Second Last Name")
