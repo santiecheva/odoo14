@@ -34,12 +34,6 @@ class ResPartner(models.Model):
 
     _inherit = 'res.partner'
 
-    _sql_constraints = [
-    ('ident_unique',
-        'UNIQUE(l10n_latam_identification_type_id,vat)',
-        "¡El número de identificación debe ser único!"),
-    ]
-
     x_name1 = fields.Char(string ="First Name")
     x_name2 = fields.Char(string ="Second Name")
     x_lastname1 = fields.Char(string ="Last Name")
@@ -58,3 +52,8 @@ class ResPartner(models.Model):
         string ="Régimen"
     )
 
+    _sql_constraints = [
+    ('ident_unique',
+        'UNIQUE(l10n_latam_identification_type_id,vat)',
+        "¡El número de identificación debe ser único!"),
+    ]
