@@ -8,17 +8,6 @@
         <field name="arch" type="xml">
 
 
-            <xpath expr="(//field[@name='name'])[4]" position="before">
-                <field name="x_name1"
-                        placeholder="First Name" attrs="{'invisible':['|',('type', '=', 'delivery')], 'required': [('type', '!=', 'delivery')]}" />
-                <field name="x_name2"
-                        placeholder="Second Name" attrs="{'invisible':['|',('type', '=', 'delivery')]}" />
-                <field name="x_lastname1"
-                        placeholder="Last Name" attrs="{'invisible':['|',('type', '=', 'delivery')], 'required': [('type', '!=', 'delivery')]}" />
-                <field name="x_lastname2"
-                        placeholder="Second Last Name" attrs="{'invisible':['|',('type', '=', 'delivery')]}" />
-                </xpath>
-
                 <field name="city" position="attributes">
                     <attribute name="invisible">1</attribute>
                 </field>
@@ -30,7 +19,7 @@
                 <field name="vat" position="before">
                     <field name="x_pn_retri" string="Régimen"/>
                 </field>
-   
+
         </field>
     </record>
 
