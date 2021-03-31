@@ -30,7 +30,7 @@
                 <field name="vat" position="before">
                     <field name="x_pn_retri" string="Régimen"/>
                 </field>
-   
+
         </field>
     </record>
 

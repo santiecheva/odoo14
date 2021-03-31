@@ -45,7 +45,7 @@ class ResPartner(models.Model):
     x_lastname1 = fields.Char(string ="Last Name")
     x_lastname2 = fields.Char(string ="Second Last Name")
 
-    city = fields.Char(related="city_id.name")
+    #city = fields.Char(related="city_id.name")
 
     x_pn_retri = fields.Selection(
         [
