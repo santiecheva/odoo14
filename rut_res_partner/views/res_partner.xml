@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    
+
     <record model="ir.ui.view" id="rut_partner_form">
         <field name='inherit_id' ref='base.view_partner_form'/>
         <field name="name">Fórmulario Contacto colombia</field>
@@ -8,12 +8,17 @@
         <field name="arch" type="xml">
 
 
-                <field name="street" position="after">
-                    <field name = "x_name1" />
-                    <field name = "x_name2" />
-                    <field name = "x_lastname1"  />
-                    <field name = "x_lastname2"/>
-                </field>
+            <xpath expr="(//field[@name='name'])[4]" position="before">
+                <field name="pos_name" placeholder="Point of Sales Name or Direction" attrs="{'invisible':['|',('type', '!=', 'delivery')], 'required': [('type', '=', 'delivery')]}" />
+                <field name="x_name1"
+                        placeholder="First Name" attrs="{'invisible':['|',('type', '=', 'delivery')], 'required': [('type', '!=', 'delivery')]}" />
+                <field name="x_name2"
+                        placeholder="Second Name" attrs="{'invisible':['|',('type', '=', 'delivery')]}" />
+                <field name="x_lastname1"
+                        placeholder="Last Name" attrs="{'invisible':['|',('type', '=', 'delivery')], 'required': [('type', '!=', 'delivery')]}" />
+                <field name="x_lastname2"
+                        placeholder="Second Last Name" attrs="{'invisible':['|',('type', '=', 'delivery')]}" />
+                </xpath>
 
                 <field name="city" position="attributes">
                     <attribute name="invisible">1</attribute>
@@ -26,8 +31,7 @@
                 <field name="vat" position="before">
                     <field name="x_pn_retri" string="Régimen"/>
                 </field>
-
-
+   
         </field>
     </record>
 
