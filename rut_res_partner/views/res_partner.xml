@@ -9,7 +9,6 @@
 
 
             <xpath expr="(//field[@name='name'])[4]" position="before">
-                <field name="pos_name" placeholder="Point of Sales Name or Direction" attrs="{'invisible':['|',('type', '!=', 'delivery')], 'required': [('type', '=', 'delivery')]}" />
                 <field name="x_name1"
                         placeholder="First Name" attrs="{'invisible':['|',('type', '=', 'delivery')], 'required': [('type', '!=', 'delivery')]}" />
                 <field name="x_name2"
