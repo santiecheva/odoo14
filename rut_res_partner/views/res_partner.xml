@@ -7,7 +7,6 @@
         <field name="model">res.partner</field>
         <field name="arch" type="xml">
 
-
             <xpath expr="(//field[@name='name'])[4]" position="before">
                 <field name="firstName"
                         placeholder="First Name" attrs="{'required': [('type', '!=', 'delivery')]}" />
@@ -17,19 +16,19 @@
                         placeholder="Last Name" attrs="{ 'required': [('type', '!=', 'delivery')]}" />
                 <field name="secondLastName"
                         placeholder="Second Last Name" />
-                </xpath>
+            </xpath>
 
-                <field name="city" position="attributes">
-                    <attribute name="invisible">1</attribute>
-                </field>
+            <field name="city" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
 
-                <field name="street2" position="after">
-                    <field name = "city_id"  class="o_address_city" placeholder="Medellín"/>
-                </field>
+            <field name="street2" position="after">
+                <field name = "city_id"  class="o_address_city" placeholder="Medellín"/>
+            </field>
 
-                <field name="vat" position="before">
-                    <field name="x_pn_retri" string="Régimen"/>
-                </field>
+            <field name="vat" position="before">
+                <field name="x_pn_retri" string="Régimen"/>
+            </field>
 
         </field>
     </record>
