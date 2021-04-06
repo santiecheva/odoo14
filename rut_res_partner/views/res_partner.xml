@@ -10,13 +10,13 @@
 
             <xpath expr="(//field[@name='name'])[4]" position="before">
                 <field name="firstName"
-                        placeholder="First Name" attrs="{'invisible':['|',('type', '=', 'delivery')], 'required': [('type', '!=', 'delivery')]}" />
+                        placeholder="First Name" attrs="{'required': [('type', '!=', 'delivery')]}" />
                 <field name="secondName"
-                        placeholder="Second Name" attrs="{'invisible':['|',('type', '=', 'delivery')]}" />
+                        placeholder="Second Name"  />
                 <field name="lastName"
-                        placeholder="Last Name" attrs="{'invisible':['|',('type', '=', 'delivery')], 'required': [('type', '!=', 'delivery')]}" />
+                        placeholder="Last Name" attrs="{ 'required': [('type', '!=', 'delivery')]}" />
                 <field name="secondLastName"
-                        placeholder="Second Last Name" attrs="{'invisible':['|',('type', '=', 'delivery')]}" />
+                        placeholder="Second Last Name" />
                 </xpath>
 
                 <field name="city" position="attributes">
