@@ -23,7 +23,7 @@
         <field name="arch" type="xml">
             <form string="CIIU" >
                 <group>
-                    <field name="name" /
+                    <field name="name" />
                     <field name="code"/>
                     <field name="description"/>
                 </group>
