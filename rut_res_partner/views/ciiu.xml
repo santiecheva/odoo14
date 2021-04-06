@@ -23,7 +23,7 @@
         <field name="arch" type="xml">
             <form string="CIIU" >
                 <group>
-                    <field name="name" />                
+                    <field name="name" /
                     <field name="code"/>
                     <field name="description"/>
                 </group>
@@ -31,13 +31,13 @@
         </field>
     </record>
 
-  <record id='action_codigo_ciiu' model= 'ir.actions.act_window'>
-  <field name='name'>codigo.ciiu</field>
-  <field name='type'>ir.actions.act_window</field>
-  <field name='res_model'>ciiu</field>
-  <field name='view_mode'>tree,form</field>
-  </record>
+    <record id='action_codigo_ciiu' model= 'ir.actions.act_window'>
+    <field name='name'>codigo.ciiu</field>
+    <field name='type'>ir.actions.act_window</field>
+    <field name='res_model'>ciiu</field>
+    <field name='view_mode'>tree,form</field>
+    </record>
 
- 
+
 
 </odoo>

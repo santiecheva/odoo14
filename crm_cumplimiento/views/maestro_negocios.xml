@@ -50,10 +50,10 @@
         <field name='contrato_id'/>
         <field name='verde_hasta'/>
         <field name='amarillo_hasta'/>
-        <field name='naranja_hasta'/>      
+        <field name='naranja_hasta'/>
       </tree>
     </field>
-  </record>  
+  </record>
 
   <record id='action_maestro_contratos' model= 'ir.actions.act_window'>
   <field name='name'>Maestro.Contratos</field>

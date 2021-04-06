@@ -34,10 +34,10 @@ class ResPartner(models.Model):
 
     _inherit = 'res.partner'
 
-    x_name1 = fields.Char(string ="First Name")
-    x_name2 = fields.Char(string ="Second Name")
-    x_lastname1 = fields.Char(string ="Last Name")
-    x_lastname2 = fields.Char(string ="Second Last Name")
+    firstName = fields.Char(string ="First Name")
+    secondName = fields.Char(string ="Second Name")
+    lastName = fields.Char(string ="Last Name")
+    secondLastName = fields.Char(string ="Second Last Name")
 
     x_pn_retri = fields.Selection(
         [
