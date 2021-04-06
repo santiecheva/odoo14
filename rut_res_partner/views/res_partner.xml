@@ -7,7 +7,7 @@
         <field name="model">res.partner</field>
         <field name="arch" type="xml">
 
-            <field name="parent_id" position="after">
+            <field name="street" position="before">
                 <field name="firstName"
                         placeholder="First Name" attrs="{'required': [('type', '!=', 'delivery')]}" />
                 <field name="secondName"
