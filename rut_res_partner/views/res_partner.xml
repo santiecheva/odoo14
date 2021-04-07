@@ -8,14 +8,16 @@
         <field name="arch" type="xml">
 
             <field name="street" position="before">
-                <field name="firstName"
-                        placeholder="First Name" attrs="{'required': [('type', '!=', 'delivery')]}" />
+                <field name="Primer Nombre"
+                        placeholder="Nombre" attrs="{'required': [('type', '!=', 'delivery')]}" />
                 <field name="secondName"
-                        placeholder="Second Name"  />
+                        placeholder="Segundo Nombre"  attrs="{'invisible': [('company_type','=', 'company')]}"  />
                 <field name="lastName"
-                        placeholder="Last Name" attrs="{ 'required': [('type', '!=', 'delivery')]}" />
-                <field name="secondLastName"
-                        placeholder="Second Last Name" />
+                        placeholder="Apellido" attrs="{
+                            'required': [('company_type', '!=', 'company')],
+                            'invisible': [('company_type','=', 'company')]}" />
+                <field name="segundo Apellido"
+                        placeholder="Second Last Name" attrs="{'invisible': [('company_type','=', 'company')]}" />
             </field>
 
             <field name="city" position="attributes">
