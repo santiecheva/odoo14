@@ -58,10 +58,8 @@ class ResPartner(models.Model):
         "¡El número de identificación debe ser único!"),
     ]
 
-    companyName = fields.Char(string="Company Name")
-    companyBrandName = fields.Char(string ="Brand")
 
-    @api.onchange('firstName', 'secondName', 'lastName', 'secondLastName', 'companyName', 'pos_name')
+    @api.onchange('firstName', 'secondName', 'lastName', 'secondLastName', 'pos_name')
     def _concat_name(self):
         """
             This function concatenates the four name fields in order to be able to
@@ -104,15 +102,7 @@ class ResPartner(models.Model):
                     if item is not b'':
                         formatedList.append(item.decode('UTF-8'))
                     self.name = ' '.join(formatedList)
-        else:
-            # Some Companies are know for their Brand, which could conflict from the users point of view while
-            # searching the company (e.j. o2 = brand, Telefonica = Company)
-            if self.companyBrandName is not False:
-                delimiter = ', '
-                company_list = (self.companyBrandName, self.companyName)
-                self.name = delimiter.join(company_list)
-            else:
-                self.name = self.companyName
+
 
     @api.onchange('name')
     def on_change_name(self):
@@ -127,7 +117,4 @@ class ResPartner(models.Model):
         """
         if self.x_name1 is not False:
             if len(self.x_name1) > 0:
-                self._concat_name()
-        if self.companyName is not False:
-            if len(self.companyName) > 0:
                 self._concat_name()
