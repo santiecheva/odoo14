@@ -114,6 +114,6 @@ class ResPartner(models.Model):
         fields.
         @return: void
         """
-        if self.x_name1 is not False:
-            if len(self.x_name1) > 0:
+        if self.firstName is not False:
+            if len(self.firstName) > 0:
                 self._concat_name()
