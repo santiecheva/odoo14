@@ -38,10 +38,7 @@ class ResPartner(models.Model):
     secondName = fields.Char(string ="Second Name")
     lastName = fields.Char(string ="Last Name")
     secondLastName = fields.Char(string ="Second Last Name")
-    # Company Name (legal name)
     companyName = fields.Char(string="Company Name")
-
-    # Brand Name (e.j. Claro Móvil = Brand, COMCEL SA = legal name)
     companyBrandName = fields.Char(string ="Brand")
 
     x_pn_retri = fields.Selection(
