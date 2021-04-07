@@ -2,7 +2,6 @@
 
 from odoo import models, fields
 
-
 class Ciiu(models.Model):
     _name = "res.ciiu"
 
