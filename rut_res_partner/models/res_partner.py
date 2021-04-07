@@ -38,7 +38,6 @@ class ResPartner(models.Model):
     secondName = fields.Char(string ="Second Name")
     lastName = fields.Char(string ="Last Name")
     secondLastName = fields.Char(string ="Second Last Name")
-    companyBrandName = fields.Char(string ="Brand")
 
     x_pn_retri = fields.Selection(
         [
@@ -60,6 +59,7 @@ class ResPartner(models.Model):
     ]
 
     companyName = fields.Char(string="Company Name")
+    companyBrandName = fields.Char(string ="Brand")
 
     @api.onchange('firstName', 'secondName', 'lastName', 'secondLastName', 'companyName', 'pos_name')
     def _concat_name(self):
