@@ -65,6 +65,15 @@ class CrmLead(models.Model):
         string='Seriedad'
         )
 
+    consorcio_name = fields.Char(
+    string='Nombre del consorcio'
+    )
+
+    tipo_consorcio = fields.Selection(
+        [('ut','Unión Temporal'),('consorcio','Consorcio')],
+        string='Tipo de consorcio'
+    )
+
     @api.depends('subcontrato_id')
     def _logica_riesgo(self):
         for record in self:
