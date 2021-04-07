@@ -9,7 +9,7 @@ class CrmLead(models.Model):
     insurance_id = fields.Many2one(
         'res.partner',
         string = 'Aseguradora',
-        domain = "[('is_insurance','=',True)]",
+        domain = "[('insurance_id','=',True)]",
         help = "Asigne la aseguradora que toma el negocio",
         index = True
     )
