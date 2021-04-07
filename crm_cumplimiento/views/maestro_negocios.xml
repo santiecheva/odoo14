@@ -1,5 +1,28 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <odoo>
+    <record id='maestro_contratos_form_view' model= 'ir.ui.view'>
+      <field name='name'>TipoPolizaTreeForm</field>
+      <field name='model'>tipo.poliza</field>
+      <field name='arch' type='xml'>
+        <form string='Form Tipo Poliza'>
+          <sheet>
+            <group>
+              <field name='name'/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+  <record id='maestro_contratos_tree_view' model= 'ir.ui.view'>
+    <field name='name'>TipoPolizaTree</field>
+    <field name='model'>tipo.poliza</field>
+    <field name='arch' type='xml'>
+      <tree string='Tipo Póliza'>
+            <field name='name'/>
+      </tree>
+    </field>
+  </record>
+
   <record id='maestro_contratos_form_view' model= 'ir.ui.view'>
       <field name='name'>Maestro contratos</field>
       <field name='model'>maestro.contratos</field>
@@ -21,9 +44,9 @@
             <field name='name'/>
       </tree>
     </field>
-  </record>  
+  </record>
 
-   <record id='maestro_subcontratos_form_view' model= 'ir.ui.view'>
+  <record id='maestro_subcontratos_form_view' model= 'ir.ui.view'>
       <field name='name'>Maestro subcontratos</field>
       <field name='model'>maestro.subcontratos</field>
       <field name='arch' type='xml'>
@@ -56,17 +79,24 @@
   </record>
 
   <record id='action_maestro_contratos' model= 'ir.actions.act_window'>
-  <field name='name'>Maestro.Contratos</field>
-  <field name='type'>ir.actions.act_window</field>
-  <field name='res_model'>maestro.contratos</field>
-  <field name='view_mode'>tree,form</field>
+    <field name='name'>Maestro.Contratos</field>
+    <field name='type'>ir.actions.act_window</field>
+    <field name='res_model'>maestro.contratos</field>
+    <field name='view_mode'>tree,form</field>
   </record>
 
   <record id='action_subcontratos' model= 'ir.actions.act_window'>
-  <field name='name'>Maestro.Subcontratos</field>
-  <field name='type'>ir.actions.act_window</field>
-  <field name='res_model'>maestro.subcontratos</field>
-  <field name='view_mode'>tree,form</field>
+    <field name='name'>TipoPoliza</field>
+    <field name='type'>ir.actions.act_window</field>
+    <field name='res_model'>tipo.poliza</field>
+    <field name='view_mode'>tree,form</field>
+  </record>
+
+  <record id='action_subcontratos' model= 'ir.actions.act_window'>
+    <field name='name'>TipoPoliza</field>
+    <field name='type'>ir.actions.act_window</field>
+    <field name='res_model'>tipo.poliza</field>
+    <field name='view_mode'>tree,form</field>
   </record>
 
 

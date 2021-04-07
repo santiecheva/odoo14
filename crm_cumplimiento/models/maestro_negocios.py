@@ -1,6 +1,12 @@
 from odoo import models, fields
 
 class MaestroContratos(models.Model):
+	_name = 'tipo.poliza'
+
+	name = fields.Char(string = 'Tipo de Póliza', index=True)
+
+
+class MaestroContratos(models.Model):
 	_name = 'maestro.contratos'
 
 	name = fields.Char(string = 'Tipo de Contrato', index=True)
