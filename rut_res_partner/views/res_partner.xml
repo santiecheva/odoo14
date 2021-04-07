@@ -33,7 +33,7 @@
             </field>
 
             <field name="category_id" position="after">
-                <field name="ciiu" string="ciiu"/>
+                <field name="activity_id" string="ciiu"/>
             </field>
 
 
