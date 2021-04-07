@@ -79,21 +79,21 @@
   </record>
 
   <record id='action_maestro_contratos' model= 'ir.actions.act_window'>
-    <field name='name'>Maestro.Contratos</field>
+    <field name='name'>Maestro Contratos</field>
     <field name='type'>ir.actions.act_window</field>
     <field name='res_model'>maestro.contratos</field>
     <field name='view_mode'>tree,form</field>
   </record>
 
   <record id='action_subcontratos' model= 'ir.actions.act_window'>
-    <field name='name'>TipoPoliza</field>
+    <field name='name'>Subcontratos</field>
     <field name='type'>ir.actions.act_window</field>
-    <field name='res_model'>tipo.poliza</field>
+    <field name='res_model'>maestro.subcontratos</field>
     <field name='view_mode'>tree,form</field>
   </record>
 
   <record id='action_tipo_poliza' model= 'ir.actions.act_window'>
-    <field name='name'>TipoPoliza</field>
+    <field name='name'>Tipo Poliza</field>
     <field name='type'>ir.actions.act_window</field>
     <field name='res_model'>tipo.poliza</field>
     <field name='view_mode'>tree,form</field>
