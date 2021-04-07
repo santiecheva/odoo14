@@ -90,18 +90,17 @@ class ResPartner(models.Model):
         ]
 
         formatedList = []
-        if self.companyName is False:
-            if self.type == 'delivery':
-                self.name = self.pos_name
-                self.firstName = False
-                self.secondName = False
-                self.lastName = False
-                self.secondLastName = False
-            else:
-                for item in nameList:
-                    if item is not b'':
-                        formatedList.append(item.decode('UTF-8'))
-                    self.name = ' '.join(formatedList)
+        if self.type == 'delivery':
+            self.name = self.pos_name
+            self.firstName = False
+            self.secondName = False
+            self.lastName = False
+            self.secondLastName = False
+        else:
+            for item in nameList:
+                if item is not b'':
+                    formatedList.append(item.decode('UTF-8'))
+                self.name = ' '.join(formatedList)
 
 
     @api.onchange('name')
