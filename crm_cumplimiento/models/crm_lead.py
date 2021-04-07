@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import logging
 from odoo import models, fields, api
-
-_logger = logging.getLogger(__name__)
 
 
 class CrmLead(models.Model):
@@ -14,16 +11,16 @@ class CrmLead(models.Model):
         string = 'Aseguradora',
         domain = "[('is_insurance','=',True)]",
         help = "Asigne la aseguradora que toma el negocio",
-        index = True 
+        index = True
     )
 
     dcto_negocio = fields.Char(
         string = 'Documento Negocio',
-         help="Acta 20394 Medellín"
+        help="Acta 20394 Medellín"
         )
 
     valor_contrato = fields.Monetary(
-        currency_field='company_currency', 
+        currency_field='company_currency',
         string="Valor del Contrato",
         tracking=True,
         help="Digite el Valor total del contrato"
@@ -36,17 +33,37 @@ class CrmLead(models.Model):
         default = 1
     )
 
-    tipo_poliza_id = fields.Many2one('tipo.poliza', string = 'Tipo de Póliza', index=True)
-    contrato_id = fields.Many2one('maestro.contratos', string = 'Tipo de Contrato' )
-    subcontrato_id = fields.Many2one('maestro.subcontratos', string = 'Subtipo de Contrato', 
-        domain = "[('contrato_id','=',contrato_id)]")
-    objeto_contrato = fields.Text(string = 'Objeto del contrato')
+    tipo_poliza_id = fields.Many2one(
+        'tipo.poliza',
+        string = 'Tipo de Póliza',
+        index=True
+        )
+    contrato_id = fields.Many2one(
+        'maestro.contratos',
+        string = 'Tipo de Contrato'
+        )
+    subcontrato_id = fields.Many2one(
+        'maestro.subcontratos',
+        string = 'Subtipo de Contrato',
+        domain = "[('contrato_id','=',contrato_id)]"
+        )
+    objeto_contrato = fields.Text(
+        string = 'Objeto del contrato'
+    )
 
     comentario = fields.Html(
         string="Comentario"
     )
 
-    ramo_id = fields.Many2one('maestro.ramos', string='Ramo')
+    ramo_id = fields.Many2one(
+        'maestro.ramos',
+        string='Ramo'
+        )
+
+    consorcio_ids = fields.Many2many(
+        'modelo.consorcio',
+        string='Seriedad'
+        )
 
     @api.depends('subcontrato_id')
     def _logica_riesgo(self):
