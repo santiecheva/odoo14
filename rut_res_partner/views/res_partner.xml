@@ -32,9 +32,7 @@
                 <field name="x_pn_retri" string="Régimen"/>
             </field>
 
-            <field name="category_id" position="after">
-                <field name="activity_id" string="ciiu"/>
-            </field>
+
 
 
         </field>
