@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields,
+from odoo import models, fields
 
 
-class CIIU(models.Model):
-    _name = "ciiu"
+class Ciiu(models.Model):
+    _name = "res.ciiu"
 
     name = fields.Char(string="Code and Description")
     code = fields.Char(string="Code")
