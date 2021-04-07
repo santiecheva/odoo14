@@ -118,5 +118,3 @@ class ResPartner(models.Model):
         if self.firstName is not False:
             if len(self.firstName) > 0:
                 self._concat_name()
-
-    activity_id = fields.Many2one('res.ciiu', string='Actividad Ciiu')
