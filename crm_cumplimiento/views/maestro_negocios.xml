@@ -50,7 +50,7 @@
       <field name='name'>Maestro subcontratos</field>
       <field name='model'>maestro.subcontratos</field>
       <field name='arch' type='xml'>
-        <form string='Form Contratos'>
+        <form string='Form Subcontratos'>
           <sheet>
             <group>
               <field name='name'/>
@@ -68,7 +68,7 @@
     <field name='name'>Maestro contratos tree</field>
     <field name='model'>maestro.subcontratos</field>
     <field name='arch' type='xml'>
-      <tree string='Contratos'>
+      <tree string='Subcontratos'>
         <field name='name'/>
         <field name='contrato_id'/>
         <field name='verde_hasta'/>
@@ -92,7 +92,7 @@
     <field name='view_mode'>tree,form</field>
   </record>
 
-  <record id='action_subcontratos' model= 'ir.actions.act_window'>
+  <record id='action_tipo_poliza' model= 'ir.actions.act_window'>
     <field name='name'>TipoPoliza</field>
     <field name='type'>ir.actions.act_window</field>
     <field name='res_model'>tipo.poliza</field>
