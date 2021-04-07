@@ -39,6 +39,7 @@ class ResPartner(models.Model):
     lastName = fields.Char(string ="Last Name")
     secondLastName = fields.Char(string ="Second Last Name")
 
+
     x_pn_retri = fields.Selection(
         [
             ("6", "Simplificado"),
@@ -117,3 +118,5 @@ class ResPartner(models.Model):
         if self.firstName is not False:
             if len(self.firstName) > 0:
                 self._concat_name()
+
+    ciiu_id = fields.Many2one('ciiu', string='Actividad Ciiu')

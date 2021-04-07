@@ -32,6 +32,11 @@
                 <field name="x_pn_retri" string="Régimen"/>
             </field>
 
+            <field name="category_id" position="after">
+                <field name="ciiu" string="ciiu"/>
+            </field>
+
+
         </field>
     </record>
 
