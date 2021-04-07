@@ -69,11 +69,11 @@ class CrmLead(models.Model):
     def _logica_riesgo(self):
         for record in self:
             if record.subcontrato_id:
-                if 0 <=record.valor_asegurar < record.subcontrato_id.verde_hasta:
-                    record.riesgo_id = 1
-                elif record.subcontrato_id.verde_hasta <= record.valor_asegurar < record.subcontrato_id.amarillo_hasta:
-                    record.riesgo_id = 3
-                elif record.subcontrato_id.amarillo_hasta <= record.valor_asegurar < record.subcontrato_id.naranja_hasta:
-                    record.riesgo_id = 7
-                elif record.subcontrato_id.naranja_hasta <= record.valor_asegurar:
-                    record.riesgo_id = 13
+                if 0 <=record.valor_contrato < record.subcontrato_id.verde_hasta:
+                    record.riesgo = 1
+                elif record.subcontrato_id.verde_hasta <= record.valor_contrato < record.subcontrato_id.amarillo_hasta:
+                    record.riesgo = 3
+                elif record.subcontrato_id.amarillo_hasta <= record.valor_contrato < record.subcontrato_id.naranja_hasta:
+                    record.riesgo = 7
+                elif record.subcontrato_id.naranja_hasta <= record.valor_contrato:
+                    record.riesgo = 13
