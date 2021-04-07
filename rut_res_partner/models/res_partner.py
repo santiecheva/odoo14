@@ -119,4 +119,4 @@ class ResPartner(models.Model):
             if len(self.firstName) > 0:
                 self._concat_name()
 
-    activity_id = fields.Many2one('ciiu', string='Actividad Ciiu')
+    activity_id = fields.Many2one('res.ciiu', string='Actividad Ciiu')
