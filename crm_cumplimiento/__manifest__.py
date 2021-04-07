@@ -10,13 +10,14 @@
     'company': "Rave Agencia de Seguros",
     'maintainer': 'Santiago Echeverri Valencia',
     'category': 'sales',
-    'depends': ['base','crm'],
+    'depends': ['base','crm','l10n_latam_base'],
     'license': 'LGPL-3',
     'data': [
         #'security/ir.model.access.csv',
         'views/crm_views.xml',
         'views/maestro_negocios.xml',
         'views/ramos.xml',
+        'views/res_partner.xml',
 
         ],
     'demo': [],

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="rut_partner_form">
+        <field name='inherit_id' ref='l10n_latam_base.view_partner_latam_form'/>
+        <field name="name">Fórmulario Contacto colombia</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <field name="l10n_latam_identification_type_id" position="after">
+                <field name="is_aseguradora" string="Aseguradora"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>
