@@ -8,7 +8,7 @@
         <field name="arch" type="xml">
 
             <field name="street" position="before">
-                <field name="Primer Nombre"
+                <field name="firstName"
                         placeholder="Nombre" attrs="{'required': [('type', '!=', 'delivery')]}" />
                 <field name="secondName"
                         placeholder="Segundo Nombre"  attrs="{'invisible': [('company_type','=', 'company')]}"  />
