@@ -12,7 +12,7 @@ class MaestroRamos(models.Model):
 	insurance_id = fields.Many2one(
 		'res.partner',
 		string = 'Aseguradora',
-        domain = "[('insurance_id','=',True)]"
+        domain = "[('is_insurance','=',True)]"
 	)
 
 	codigo = fields.Integer(
