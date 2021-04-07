@@ -12,7 +12,7 @@
                 </field>
 
                 <field name='date_deadline' position = 'after'>
-                    <field name="id"/>                    
+                    <field name="id"/>
                 </field>
 
             <notebook>
@@ -26,23 +26,31 @@
                         <group>
                             <field name="dcto_negocio"/>
                             <field name="valor_contrato" widget='monetary' options="{'currency_field': 'company_currency'}"/>
-                             <field name = 'ramo_id' />            
-                        </group>    
+                            <field name = 'ramo_id' />
+                        </group>
                     </group>
                     <div>
-                     <h2 style='color:SlateBlue;'>Objeto del Contrato</h2>
+                    <h2 style='color:SlateBlue;'>Objeto del Contrato</h2>
                         <field name = 'objeto_contrato' />
                     </div>
+                </page>
+                <page string = 'Consorcios'>
+                    <field name='consorcio_ids' widget='one2many'>
+                        <tree editable='bottom'>
+                            <field name='name' widget='many2one'/>
+                            <field name='porcentaje'/>
+                        </tree>
+                    </field>
                 </page>
 
                 <page string = 'Comentario del negocio'>
                     <field name='comentario' />
                 </page>
-                
+
             </notebook>
             </field>
         </record>
-   
 
-  </data>
+
+    </data>
 </odoo>
