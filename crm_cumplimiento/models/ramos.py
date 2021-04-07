@@ -5,20 +5,54 @@ class MaestroRamos(models.Model):
 	_name = 'maestro.ramos'
 	_description = 'Maestro de Ramos por Aseguradora'
 
-	name = fields.Char(string = 'Ramos por Aseguradora')
-	insurance_id = fields.Many2one('res.partner', string = 'Aseguradora')
-	codigo = fields.Integer(string = 'Código del Ramo')
-	iva = fields.Integer(string = 'Iva', help = 'Iva del ramo seleccionado')
-	porcentaje_ramo = fields.Integer(string = 'Porcentaje')
-	producto = fields.Char(string = 'producto')
-	IdInsura = fields.Integer(string = 'Id Insura')
+	name = fields.Char(
+		string = 'Ramos por Aseguradora'
+	)
+
+	insurance_id = fields.Many2one(
+		'res.partner',
+		string = 'Aseguradora',
+        domain = "[('insurance_id','=',True)]"
+	)
+
+	codigo = fields.Integer(
+		string = 'Código del Ramo'
+	)
+
+	iva = fields.Integer(
+		string = 'Iva',
+		help = 'Iva del ramo seleccionado'
+	)
+
+	porcentaje_ramo = fields.Integer(
+		string = 'Porcentaje'
+	)
+
+	producto = fields.Char(
+		string = 'producto'
+	)
+
+	IdInsura = fields.Integer(
+		string = 'Id Insura'
+	)
+
 	IdSis = fields.Integer(string = 'Id Sis')
-	team_id = fields.Many2one('crm.team', string = 'Canal de Ventas')
-	insurer_id = fields.Integer(string = 'InsurerID')
-	active = fields.Boolean(default=True)
+
+	team_id = fields.Many2one(
+		'crm.team',
+		string = 'Canal de Ventas'
+	)
+
+	insurer_id = fields.Integer(
+		string = 'InsurerID'
+	)
+
+	active = fields.Boolean(
+		default=True
+	)
 
 class CrmLead(models.Model):
-	
+
 	_inherit = 'crm.lead'
 
 	ramo_id = fields.Many2one('maestro.ramos', string = 'Ramo')
