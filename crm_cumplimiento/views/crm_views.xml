@@ -35,6 +35,14 @@
                     </div>
                 </page>
                 <page string = 'Consorcios'>
+                    <group>
+                        <group>
+                            <field name = 'consorcio_name' />
+                        </group>
+                        <group>
+                            <field name = 'tipo_consorcio' />
+                        </group>
+                    </group>
                     <field name='consorcio_ids' widget='one2many'>
                         <tree editable='bottom'>
                             <field name='name' widget='many2one'/>
