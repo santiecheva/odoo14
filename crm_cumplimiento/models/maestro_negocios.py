@@ -1,4 +1,4 @@
-from odoo import models, fields, api, exceptions
+from odoo import models, fields
 
 class MaestroContratos(models.Model):
 	_name = 'maestro.contratos'
