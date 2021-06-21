@@ -14,6 +14,8 @@
         #'security/ir.model.access.csv',
         'views/ciiu.xml',
         'views/res_partner.xml',
+        'views/res_users.xml',
+
 
         ],
     'demo': [],

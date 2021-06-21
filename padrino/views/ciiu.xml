@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- CIIU Related info-->
+
+    <!--CIIU List View-->
+    <record id="view_ciiu_transaction_tree" model="ir.ui.view">
+        <field name="name">ciiu.tree</field>
+        <field name="model">res.ciiu</field>
+        <field name="arch" type="xml">
+            <tree string="CIIU">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- CIIU Form View-->
+    <record id="view_ciiu_transaction_form" model="ir.ui.view">
+        <field name="name">ciiu.view</field>
+        <field name="model">res.ciiu</field>
+        <field name="arch" type="xml">
+            <form string="CIIU" >
+                <group>
+                    <field name="name" />
+                    <field name="code"/>
+                    <field name="description"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id='action_codigo_ciiu' model= 'ir.actions.act_window'>
+    <field name='name'>codigo.ciiu</field>
+    <field name='type'>ir.actions.act_window</field>
+    <field name='res_model'>res.ciiu</field>
+    <field name='view_mode'>tree,form</field>
+    </record>
+
+
+
+</odoo>

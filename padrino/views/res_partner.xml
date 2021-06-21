@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="rut_partner_form">
+        <field name='inherit_id' ref='base.view_partner_form'/>
+        <field name="name">Fórmulario Contacto colombia</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+
+            <field name="street" position="before">
+                <field name="firstName"
+                        placeholder="Nombre" attrs="{'required': [('type', '!=', 'delivery')]}" />
+                <field name="secondName"
+                        placeholder="Segundo Nombre"  attrs="{'invisible': [('company_type','=', 'company')]}"  />
+                <field name="lastName"
+                        placeholder="Apellido" attrs="{
+                            'required': [('company_type', '!=', 'company')],
+                            'invisible': [('company_type','=', 'company')]}" />
+                <field name="secondLastName"
+                    placeholder="segundo Apellido" attrs="{'invisible': [('company_type','=', 'company')]}" />
+            </field>
+
+            <field name="city" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+
+            <field name="street2" position="after">
+                <field name = "city_id"  class="o_address_city" placeholder="Medellín"/>
+            </field>
+
+            <field name="vat" position="before">
+                <field name="x_pn_retri" string="Régimen"/>
+            </field>
+
+            <field name="ref" position="before">
+                <field name="godfather" widget="selection"/>
+            </field>
+
+
+
+        </field>
+    </record>
+
+</odoo>
