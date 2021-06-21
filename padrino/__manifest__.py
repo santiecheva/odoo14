@@ -11,11 +11,8 @@
     'category': 'tools',
     'depends': ['base','contacts'],
     'data': [
-        #'security/ir.model.access.csv',
         'views/res_partner.xml',
-        'views/res_users.xml',
-
-
+        'views/res_users.xml'
         ],
     'demo': [],
     'images': [],

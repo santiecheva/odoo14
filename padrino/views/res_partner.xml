@@ -3,14 +3,13 @@
 
     <record model="ir.ui.view" id="partner_form_view">
         <field name='inherit_id' ref='base.view_partner_form'/>
-        <field name="name">Fórmulario Contacto colombia</field>
+        <field name="name">Fórmulario Contacto padrino</field>
         <field name="model">res.partner</field>
         <field name="arch" type="xml">
-            <!--
+
             <field name="ref" position="before">
                 <field name="godfather" widget="selection"/>
             </field>
-            -->
         </field>
     </record>
 
