@@ -8,7 +8,7 @@
         <field name="arch" type="xml">
 
             <field name="ref" position="before">
-                <field name="godfather" widget="selection"/>
+                <field name="godfather_id" widget="selection"/>
             </field>
         </field>
     </record>
