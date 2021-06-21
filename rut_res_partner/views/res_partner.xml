@@ -17,7 +17,7 @@
                             'required': [('company_type', '!=', 'company')],
                             'invisible': [('company_type','=', 'company')]}" />
                 <field name="secondLastName"
-                        placeholder="segundo Apellido" attrs="{'invisible': [('company_type','=', 'company')]}" />
+                    placeholder="segundo Apellido" attrs="{'invisible': [('company_type','=', 'company')]}" />
             </field>
 
             <field name="city" position="attributes">
