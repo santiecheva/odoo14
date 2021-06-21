@@ -10,5 +10,5 @@ class ResPartner(models.Model):
     godfather_id = fields.Many2one(
                                     'res.users',
                                     string= 'Padrino',
-                                    domain="[('is_goodfather','=',True)]"
+                                    domain="[('is_godfather','=',True)]"
                                 )
