@@ -74,6 +74,11 @@ class CrmLead(models.Model):
         string='Tipo de consorcio'
     )
 
+    beneficiario_id = fields.Many2one(
+        'res.partner',
+        string='Beneficiario'
+        )
+
     @api.depends('subcontrato_id')
     def _logica_riesgo(self):
         for record in self:
