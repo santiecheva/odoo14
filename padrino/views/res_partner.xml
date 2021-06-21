@@ -10,7 +10,7 @@
             <field name="ref" position="before">
                 <field name="godfather" widget="selection"/>
             </field>
--->
+            -->
         </field>
     </record>
 
