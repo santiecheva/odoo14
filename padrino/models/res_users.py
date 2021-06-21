@@ -5,4 +5,4 @@ class ResUsers(models.Model):
 
     _inherit = 'res.users'
 
-    is_goodfather = fields.Boolean(string='Padrino')
+    is_goodfather = fields.Boolean('Padrino', default=False)
