@@ -11,8 +11,8 @@
     'category': 'tools',
     'depends': ['base','contacts'],
     'data': [
-      #  'views/res_partner.xml',
-       # 'views/res_users.xml'
+        'views/res_partner.xml',
+        'views/res_users.xml'
         ],
     'demo': [],
     'images': [],
