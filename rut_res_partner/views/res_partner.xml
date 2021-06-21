@@ -32,6 +32,9 @@
                 <field name="x_pn_retri" string="Régimen"/>
             </field>
 
+            <field name="ref" position="before">
+                <field name="godfather" widget="selection"/>
+            </field>
 
 
 

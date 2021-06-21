@@ -1,0 +1,14 @@
+<odoo>
+
+    <record id="res_user_godfather_form" model="ir.ui.view">
+        <field name="name">Padrino</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="is_godfather"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

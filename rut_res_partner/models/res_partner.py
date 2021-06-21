@@ -53,6 +53,12 @@ class ResPartner(models.Model):
         string ="Régimen"
     )
 
+    godfather_id = fields.Many2one(
+                                    'res.users',
+                                    string= 'Padrino',
+                                    domain="[('is_goodfather','=',True)]"
+                                )
+
     _sql_constraints = [
     ('ident_unique',
         'UNIQUE(l10n_latam_identification_type_id,vat)',
