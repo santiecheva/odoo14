@@ -1,8 +1,8 @@
 from odoo import models, fields
 
 
-class ResPartner(models.Model):
+class ResUsers(models.Model):
 
-    _inherit = 'res.partner'
+    _inherit = 'res.users'
 
     is_goodfather = fields.Boolean(string='Padrino')
