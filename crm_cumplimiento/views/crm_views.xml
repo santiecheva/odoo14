@@ -8,7 +8,7 @@
             <field name="arch" type="xml">
 
                 <field name='company_id' position = 'after'>
-                    <field name="beneficiario_id"/>
+                    <field name="beneficiario_id"/> 
                     <field name="insurance_id"/>
                 </field>
 
